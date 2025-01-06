@@ -1,0 +1,160 @@
+body
+{
+    background-color:#333333;
+    color: #dddddd;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.centerbox
+{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color:#444;
+}
+
+a
+{
+    color: #aaaaff;
+}
+
+table, th, tr, td
+{
+    border-color: #444444;
+}
+
+textarea, blockquote
+{
+    background-color:#111111;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+input
+{
+    background-color:#656565;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+button
+{
+    background-color:#656565;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+
+/* 404 page */
+#not-found
+{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+
+/* index.html in Foclóir Tráchtais */  
+#versionNum{
+    text-align: center;
+}
+
+/* ref: https://www.w3schools.com/howto/howto_js_filter_lists.asp */  
+#termInput
+{
+    width: 99.5%;
+    font-size: 16px; /* Increase font-size */
+    padding-top: 12px; /* Add some padding */
+    padding-bottom: 12px; /* Add some padding */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#dict-idx
+{
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dict-idx li a
+{
+    border: 1px solid #5f5f5f; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #444; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: #ffffff; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#dict-idx li a:hover:not(.header)
+{
+    background-color: #111111; /* Add a hover effect to all links, except for headers */
+}
+
+/* header.html */  
+/* https://www.w3schools.com/howto/howto_js_topnav.asp */
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #222;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #222;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #656565;
+    color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #656565;
+    color: #fff;
+} 

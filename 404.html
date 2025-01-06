@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="/css/gnath.css">
+        <!-- function to allow loading from another HTML file
+        see: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script> 
+            $(function(){
+                $("#headerBar").load("header.html"); 
+            });
+        </script> 
+        <title>404</title>
+    </head>
+
+    <body>
+        <div id="headerBar"></div>
+        <div class='centerbox'>
+            <h1>404</h1>
+            <div>You probably know what you are looking for...but I don't! Apologies. Take a picture of a duck (used with persmission from <a href="https://www.pexels.com/es-es/foto/patito-en-suelo-negro-durante-el-dia-162140/">Pixabay</a>) as consolation. You might also want to go back to the <a href="/">Home Page</a> of my website.</div>
+
+            <img id="not-found" src="/images/404.jpg" alt="A yellow duckling sitting on the ground, looking slightly confused.">
+        </div>
+    </body>
+</html>
