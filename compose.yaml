@@ -1,8 +1,8 @@
 services:
   apache:
     image: httpd:latest
-    container_name: site-app
+    container_name: dict-app
     ports:
-    - '8080:80'
+    - '8000:80'
     volumes:
     - ./:/usr/local/apache2/htdocs
