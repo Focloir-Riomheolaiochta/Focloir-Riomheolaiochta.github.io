@@ -9,8 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script> 
             $(function(){
-                $("#headerBar").load("../header.html"); 
+                $("#headerBar").load("/header.html"); 
             });
+            $(function(){{
+                $("#footerBar").load("/footer.html"); 
+            }});
         </script> 
         <title>Íoslódáil</title>
     </head>
@@ -68,6 +71,7 @@
             <h2>Sean-leagancha</h2>
             Níl sean-leagan ar bith den Fhoclóir ar fáil.
             <!-- <h3>Leagan 1.X</h3> -->
+            <div id="footerBar"></div>
         </div>
     </body>
-</html>
+</html> 

@@ -9,8 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script> 
             $(function(){
-                $("#headerBar").load("../header.html"); 
+                $("#headerBar").load("/header.html"); 
             });
+            $(function(){{
+                $("#footerBar").load("/footer.html"); 
+            }});
         </script> 
         <title>Moltaí don Fhoclóir Tráchtais</title>
     </head>
@@ -30,6 +33,7 @@
             <div>
                 Tá fáilte roimh moltaí don suíomh chomh maith. Más suim leat moladh a bhaineann leis an suíomh a chur isteach déan Pull Request ar an leathanach GitHub seo: <a href="https://github.com/Jeffrey-Sardina/jeffrey-sardina.github.io">https://github.com/Jeffrey-Sardina/jeffrey-sardina.github.io</a>
             </div>
+            <div id="footerBar"></div>
         </div>
     </body>
 </html> 

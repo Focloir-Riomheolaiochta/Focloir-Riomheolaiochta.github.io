@@ -9,8 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script> 
             $(function(){
-                $("#headerBar").load("../header.html"); 
+                $("#headerBar").load("/header.html"); 
             });
+            $(function(){{
+                $("#footerBar").load("/footer.html"); 
+            }});
         </script> 
         <title>Ceadúnas</title>
     </head>
@@ -28,6 +31,7 @@
                     <li>Má úsáideann tú i bhfoilseachán é, ba cheart duit é a lua.</li>
                 </ul>
             </div>
+            <div id="footerBar"></div>
         </div>
     </body>
 </html> 

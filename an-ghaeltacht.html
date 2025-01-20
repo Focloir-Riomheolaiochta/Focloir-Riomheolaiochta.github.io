@@ -9,8 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script> 
             $(function(){
-                $("#headerBar").load("../header.html"); 
+                $("#headerBar").load("/header.html"); 
             });
+            $(function(){{
+                $("#footerBar").load("/footer.html"); 
+            }});
         </script> 
         <title>An Ghaeltacht agus Foclóireacht</title>
     </head>
@@ -31,6 +34,7 @@
                     <li><a href="https://www.rte.ie/gaeilge/2024/0208/1430969-banu-cultuir-agus-teanga-fadhb-na-tithiochta-sa-ghaeltacht/">Bánú na Gaeltachta</a></li>
                 </ul>
             </div>
+            <div id="footerBar"></div>
         </div>
     </body>
 </html> 
