@@ -61,11 +61,12 @@ button
 
 
 /* index.html in Foclóir Tráchtais */  
-#versionNum{
+/* ref: https://www.w3schools.com/howto/howto_js_filter_lists.asp */  
+#versionNum
+{
     text-align: center;
 }
 
-/* ref: https://www.w3schools.com/howto/howto_js_filter_lists.asp */  
 #termInput
 {
     width: 99.5%;
@@ -99,6 +100,7 @@ button
 {
     background-color: #111111; /* Add a hover effect to all links, except for headers */
 }
+
 
 /* header.html */  
 /* https://www.w3schools.com/howto/howto_js_topnav.asp */
@@ -158,3 +160,11 @@ button
     background-color: #656565;
     color: #fff;
 } 
+
+
+/* footer.html */
+.footer
+{
+    text-align: center;
+    font-size: 0.75em;
+}
