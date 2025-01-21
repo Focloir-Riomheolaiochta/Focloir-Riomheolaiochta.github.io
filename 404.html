@@ -9,7 +9,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script> 
             $(function(){
-                $("#headerBar").load("header.html"); 
+                $("#headerBar").load("/header.html"); 
+            });
+            $(function(){
+                $("#footerBar").load("/footer.html"); 
             });
         </script> 
         <title>404</title>
@@ -19,9 +22,10 @@
         <div id="headerBar"></div>
         <div class='centerbox'>
             <h1>404</h1>
-            <div>You probably know what you are looking for...but I don't! Apologies. Take a picture of a duck (used with persmission from <a href="https://www.pexels.com/es-es/foto/patito-en-suelo-negro-durante-el-dia-162140/">Pixabay</a>) as consolation. You might also want to go back to the <a href="/">Home Page</a> of my website.</div>
+            <div>Pé rud atá á chuardach agat...níl's agam in aon chor cá bhfuil sé! Gabh mo leithscéal. Seo duit pictiúr de lacha (le cead ó <a href="https://www.pexels.com/es-es/foto/patito-en-suelo-negro-durante-el-dia-162140/">Pixabay</a>) ina ionad. Is dócha go bhfuil tú ag iarraidh dul ar ais chuig an <a href="/">bhFoclóir Tráchtais</a>. Munar féidir leat téarma a fháil, agus má mheasann tú gur dearmad leis an suíomh atá ann, <a href="moltai.html">abair liom anseo é</a> le do thoil!</div>
 
-            <img id="not-found" src="/images/404.jpg" alt="A yellow duckling sitting on the ground, looking slightly confused.">
+            <img id="not-found" src="/images/404.jpg" alt="Lacha bheag bhuí ina suí ar an talamh, an cuma ann go bhfuil mearbhall uirthi.">
+            <div id="footerBar"></div>
         </div>
     </body>
 </html>
