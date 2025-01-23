@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/gnath.css">
+        <!-- function to allow loading from another HTML file
+        see: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script> 
+            $(function(){
+                $("#headerBar").load("/header.html"); 
+            });
+            $(function(){{
+                $("#footerBar").load("/footer.html"); 
+            }});
+        </script> 
+        <title>Ceartúcháin ó Shean-leaganacha</title>
+    </head>
+
+    <body>
+        <div id="headerBar"></div>
+        <div class='centerbox'>
+            <h1>Ceartúcháin ó Shean-leaganacha</h1>
+            <p>
+                Seo é cartlann na dtéarmaí a raibh orm iad a cheartú. Déanann chuile chuid den leathanach seo trácht ar cén leagan den Fhoclóir Tráchtais a raibh an dearmad ann. Nóta: más leagan 'alfa' é, ciallaíonn sé sin nach raibh an leagan sin in-íoslódáilte toisc é faoi fhorbairt. Bíonn leaganacha alfa ar an suíomh, áfach, agus mar sin déantar dearmaid a bhí iontu a chur anseo.<br><br>
+
+                Ní chuirtear ceartúchán anseo ach amháin más ceartúchán mór é .i. athrú téarma go leagan Gaeilge nua. Ní dhéantar trácht ar dhearmaid chló na gramadaí anseo ach amháin sa gcás go gcuirfidís isteach go mór mór ar tuiscint an léitheora ar téarma.
+            </p>
+            
+            <h2>Ó v1.1 alfa</h2>
+            <div>
+                <strong>Sean-leagan (mícheart):</strong> weight | uimhir ualaigh
+                <br>
+                <strong>Téarma ceart:</strong> <a href="terms/weight.html">weight | ualach</a>
+                
+                <br><br>
+
+                <strong>Sean-leagan (mícheart):</strong> to weight | uimhir ualaigh a chur le
+                <br>
+                <strong>Téarma ceart:</strong> <a href="terms/to-weight.html">to weight | ualaigh</a>
+            </div>
+            <div id="footerBar"></div>
+        </div>
+    </body>
+</html> 
