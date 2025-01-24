@@ -2,6 +2,7 @@
 **Jeffrey Seathrún Sardina**<br>
 **Eanáir 2025**
 
+## Achoimre na dTéarmaí
 | **Gaeilge**                           | **Béarla**                             |
 |---------------------------------------|----------------------------------------|
 | (frása le 'ceangailte')               | connectivity                           |
@@ -17,6 +18,7 @@
 | aschur                                | output                                 |
 | bun-samhail                           | baseline model                         |
 | bunachar sonraí                       | database                               |
+| ceangal                               | edge                                   |
 | ceangal                               | relation(ship)                         |
 | ceist                                 | query                                  |
 | ceist réamhinsinte nasc               | link prediction query                  |
@@ -47,6 +49,7 @@
 | deimhnigh                             | to validate                            |
 | deimhniú                              | validation                             |
 | diúltach                              | negative                               |
+| dlúth                                 | density                                |
 | dlúth                                 | dense                                  |
 | dáileadh                              | distribution                           |
 | dírithe                               | directed                               |
@@ -64,6 +67,7 @@
 | foghlaim easnamhach                   | underfitting                           |
 | folaigh                               | latent                                 |
 | foshuíomh                             | assumption                             |
+| frith-shampla                         | negative (sample)                      |
 | frith-shampla                         | counterexample                         |
 | frith-shamplóir                       | negative sampler                       |
 | fíor-abairt (thriarach)               | positive (triple)                      |
@@ -81,6 +85,7 @@
 | le lipéad                             | labelled                               |
 | leabú                                 | embedding                              |
 | leabú graif eolais (LGE)              | knowledge graph embedding (KGE)        |
+| leagan                                | instantiation (concept)                |
 | leagan                                | representation                         |
 | lipéad                                | label                                  |
 | líonra                                | network                                |
@@ -88,8 +93,10 @@
 | líonra néarach (LN)                   | neural network (NN)                    |
 | líonra ríomhairí                      | computer network                       |
 | mapa                                  | mapping                                |
-| meastachán                            | approximation                          |
+| meastachán                            | estimate                               |
+| meastachán a dhéanamh (ar)            | to approximate                         |
 | meastachán a dhéanamh (ar)            | to estimate (about)                    |
+| meastachán                            | approximation                          |
 | measúnaigh                            | to evaluate                            |
 | measúnú                               | evaluation                             |
 | minicíocht                            | frequency                              |
@@ -105,6 +112,7 @@
 | randamach                             | random                                 |
 | ráta foghlama                         | learning rate                          |
 | réad                                  | instantiation (object)                 |
+| réamh-thraenáil                       | pretraining                            |
 | réamh-thraenáil                       | to pretrain                            |
 | réamhinsint nasc (RN)                 | link prediction (LP)                   |
 | réamhinsteoir nasc                    | link predictor                         |
@@ -138,12 +146,15 @@
 | tacar teisteála                       | testing set                            |
 | tacar traenála                        | training set                           |
 | tasc réamhinsinte nasc                | link prediction task                   |
+| teisteáil                             | testing                                |
 | teisteáil                             | to test                                |
 | toipeolaíocht                         | topology                               |
 | toise                                 | dimension                              |
 | tomhais                               | to measure                             |
-| tomhas                                | measure                                |
+| tomhas                                | metric                                 |
 | tomhas earráide                       | error                                  |
+| tomhas                                | measure                                |
+| traenáil                              | training                               |
 | traenáil                              | to train                               |
 | tras-fhoghlaim                        | transfer learning                      |
 | ualach                                | weight                                 |
@@ -152,6 +163,7 @@
 | uilíoch                               | global                                 |
 | veicteoir                             | vector                                 |
 | áitiúil                               | local                                  |
+| éadlúth                               | sparse                                 |
 | éadlúth                               | sparsity                               |
 | éifeachtacht (ama, fhuinnimh)         | efficiency                             |
 | éifeachtacht (ama, taisc)             | performance                            |
@@ -323,6 +335,19 @@ nótaí aistriúcháin:
 - \* Úsáidtear 'bunachair' mar leagan iolra den téarma seo, cé nach bhfuil leagan iolra den fhocal 'bunachar' luaite i bhFoclóir Uí Dhónaill.
 - Tá 'bunachar sonraí' ar fáil mar aistriúchán ar 'database' ar Foclóir.ie agus ar Téarma.ie, ach níl i bhfoclóir ar bith eile a úsáidtear sa tráchtas seo (.i. Ó Dónall, Ua Duinnín, srl). Sin ráite, tá idir 'bunachar' agus 'sonra' ar fáil i go leor foclóirí eile, agus níl fianaise ar bith ann go mbeadh an téarma 'bunachar sonraí' mí-nádúrtha dá bharr sin. Móide sin, níl cúis ar bith téarma eile le brí gaolmhar (m.sh. 'foras sonraí') a chumadh nua atá téarma cuí ann cheana féin. Glactar le 'bunachar sonraí' mar sin.
 - Úsáidtear 'sonraí' san uimhir iolra toisc go bhfuil níos mó ná sonra amháin i nach uile bunachar sonraí (nach mór).
+
+
+**ceangal (ainmfhocal): edge**<br>
+*sainmhíniú (ga):* cuid de ghraf a nascann (nó a cheanglaíonn) dhá nód le chéile.
+<br>
+*sainmhíniú (en):* an element of a graph that serves to connect two nodes.
+
+tagairtí:
+- ceangal: De Bhaldraithe (1978), Dineen (1934), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Is mar thagairt d'fheistiú (le rópa) a úsáidtear an téarma seo den chuid is mó sna foclóirí. Sin ráite, is féidir a rá chomh maith go bhfuil dhá nód a bhfuil ceangal eatarthu 'feistithe' lena chéile, sa chaoi nach measann an t-údar gur bac ar bith é sin ar úsáid an fhocail 'ceangal' leis an mbrí nua seo.
+- Seo an téarma céanna is a úsáidtear chun 'relation(ship)' a chur in iúl, toisc go bhfuil an bhrí chéanna leis.
 
 
 **ceangal (ainmfhocal): relation(ship)**<br>
@@ -718,6 +743,18 @@ nótaí aistriúcháin:
 - Téarma díreach ar fáil sna foclóirí.
 
 
+**dlúth (ainmfhocal): density**<br>
+*sainmhíniú (ga):* I gcomhthéacs graif eolais (nó fo-ghraif), cé chomh dlúth is atá sé.
+<br>
+*sainmhíniú (en):* In the context of a knowledge graph (or subgraph), how dense it is.
+
+tagairtí:
+- dlúth: De Bhaldraithe (1978), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Téarma díreach ar fáil le brí chomhchosúil.
+
+
 **dlúth (aidiacht): dense**<br>
 *sainmhíniú (ga):* I gcomhthéacs graif eolais (nó fo-ghraif), an-cheangailte le codanna eile den ghraf / den fho-ghraf.
 <br>
@@ -937,6 +974,20 @@ tagairtí:
 nótaí aistriúcháin:
 - De réir Fhoclóirí Uí Dhónaill agus De Bhaldraithe, is téarma fealsúnachta é seo. Cloíonn sé sin leis an gcomhthéacs eolaíochta atá i gceist leis an tráchtas seo.
 - Is féidir 'cur i gcás' nó 'beirtear leis' a úsáid chomh maith i bhfrása chun brí chomhchosúil leis seo a chur in iúl.
+
+
+**frith-shampla (ainmfhocal): negative (sample)**<br>
+*sainmhíniú (ga):* I gcomhthéacs graf eolais, abairt thriarach bhréagach a úsáidtear mar fhrith-shampla.
+<br>
+*sainmhíniú (en):* In the context of knowledge graphs, a fake triple that is used as a counterexample.
+
+tagairtí:
+- frith-: féach ar an téarma 'counterexample / frith-shampla'
+- sampla: féach ar an téarma 'sample / shampla'
+
+nótaí aistriúcháin:
+- Úsáidtear frith-shampla toisc gurb in, go díreach, a bhfuil i gceist sa gcás seo.
+- Féach chomh maith ar an téarma 'counterexample / frith-shampla'
 
 
 **frith-shampla (ainmfhocal): counterexample**<br>
@@ -1160,6 +1211,20 @@ nótaí aistriúcháin:
 - Fágtar san uimhir uatha é seo toisc nach mbíonn ach graf amháin á leabú ag an uair amháin / ag an samhail amháin.
 
 
+**leagan (ainmfhocal): instantiation (concept)**<br>
+*sainmhíniú (ga):* Sampla de choincheap nó de chreatlach, nach ionann agus réad matamaiticiúil / ríomhaireachta.
+<br>
+*sainmhíniú (en):* An instance or example of a concept or framework, other than a mathematical / computational object.
+
+tagairtí:
+- leagan: De Bhaldraithe (1978), Dineen (1934), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Ní i gcomhthéacs eolaíochta a luaitear an téarma seo, ach is le brí comhchosúil atá sé luaite.
+- Más gá a léiriú gur rud coincréiteach atá i gceist le 'leagan', seachas rud teibí, moltar 'coincréiteach' a úsáid, i dtaca le Foclóir Uí Dhónaill agus Foclóir de Bhaldraithe.
+- Tá an t-aistriúchán céanna luaite i dtéarma eile sa bhfoclóir seo; féach ar an téarma 'representation / leagan'. Sin ráite, tá an bhrí a bhaineann le 'leagan' i nGaeilge leathan go leor le go bhfuil sé in ann seasamh isteach sa dá chás. Beidh sé léir go leor ón gcomhthéacs cén ceann acu atá i gceist.
+
+
 **leagan (ainmfhocal): representation**<br>
 *sainmhíniú (ga):* I gcomhthéacs leabuithe graif eolais, leabú nó veicteoir a dhéanann ionad (ar leibhéal matamaiticiúil) réada nó coincheapa sa ngraf.
 <br>
@@ -1255,16 +1320,31 @@ nótaí aistriúcháin:
 - Luann na foclóirí thuas ar fad 'mapa' i gcomhthéacs mapa ar an domhan. Ní shin atá i gceist anseo, ach, toisc gurb é aidhm mapa ríomhaireachta ná ceangal éigin a dhéanamh idir dhá rud (le gur féidir leathrud a fáil ón leathrud eile), agus troisc gurb as an meafair sin a thagann úsáid 'mapping' i mBéarla, glactar leis an téarma sin anseo.
 
 
-**meastachán (ainmfhocal): approximation**<br>
+**meastachán (ainmfhocal): estimate**<br>
 *sainmhíniú (ga):* I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar fheiniméan éigin, gan a bheith iomlán cruinn.
 <br>
 *sainmhíniú (en):* In a mathematical context, a value that gives a quantitative description of some phenomenon, but which may not be entirely exact.
 
 tagairtí:
-- meastachán: féach ar an téarma 'estimate / meastachán'
+- meastachán: De Bhaldraithe (1978), Ó Dónaill et al. (1991), Ó Dónaill (1977)
 
 nótaí aistriúcháin:
-- Féach ar an téarma 'estimate / meastachán'.
+- Téarma ar fáil mar téarma airgeadais / matamaitice ó na foclóirí thuas.
+- Is féidir 'tomhas' a úsáid chomh maith (go háirithe sa gcaint) chun brí comhchosúil leis seo a chur in iúl. Cé is moite de sin, roghnaíodh 'meastachán' mar théarma dó seo chun idirdhealú léir a dhéanamh idir 'metric / tomhas' agus '\*estimate / tomhas'. Ar leibhéal neamh-fhoirmeálta, tá sé ceart go leor tomhas a úsáid leis an mbrí sin nuair is léir ón gcomhthéacs cén bhrí atá i gceist leis.
+- Nuair is meastachán míchruinn (nach ionann agus mícheart) atá i gceist, moltar an téarma 'garmheastachán' (de réir Fhoclóir Uí Dhónaill agus Fhoclóir De  Bhaldraithe.
+- Tá an téarma seo comhchiallach leis an téarma 'approximation / meastachán' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
+
+
+**meastachán a dhéanamh (ar) (ainmfhocal): to approximate**<br>
+*sainmhíniú (ga):* Luach a mheas.
+<br>
+*sainmhíniú (en):* To estimate a value.
+
+tagairtí:
+- meastachán: féach ar an téarma 'to estimate (about) / meastachán a dhéanamh (ar)'
+
+nótaí aistriúcháin:
+- Féach ar an téarma 'to estimate (about) / meastachán a dhéanamh (ar)'.
 
 
 **meastachán a dhéanamh (ar) (ainmfhocal): to estimate (about)**<br>
@@ -1278,6 +1358,18 @@ tagairtí:
 nótaí aistriúcháin:
 - Féach ar an téarma 'estimate / meastachán'.
 - Tá an téarma seo comhchiallach leis an téarma 'to approximate / meastachán a dhéanamh (ar)' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
+
+
+**meastachán (ainmfhocal): approximation**<br>
+*sainmhíniú (ga):* I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar fheiniméan éigin, gan a bheith iomlán cruinn.
+<br>
+*sainmhíniú (en):* In a mathematical context, a value that gives a quantitative description of some phenomenon, but which may not be entirely exact.
+
+tagairtí:
+- meastachán: féach ar an téarma 'estimate / meastachán'
+
+nótaí aistriúcháin:
+- Féach ar an téarma 'estimate / meastachán'.
 
 
 **measúnaigh (briathar): to evaluate**<br>
@@ -1474,6 +1566,20 @@ nótaí aistriúcháin:
 - \* Ní luann Foclóir Uí Dhuinín an téarma 'réad' ach i gcomhthéacs filíochta.
 - Focal luaite i gcomhthéacs comhchosúil na foclóirí eile thuas.
 - Féach chomh maith ar an téarma 'to instantiate / cruthaigh'.
+
+
+**réamh-thraenáil (ainmfhocal): pretraining**<br>
+*sainmhíniú (ga):* An próiseas a bhaineann le samhail ríomhfhoghlama a thraenáil le plean é a mion-fheabbhsú níos déanaí ar shonraí nua.
+<br>
+*sainmhíniú (en):* The process of training a machine learning model with intent to finetune it later on new data.
+
+tagairtí:
+- réamh-: De Bhaldraithe (1978), Dineen (1934), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+- traenáil: féach ar an téarma 'training / traenáil'
+
+nótaí aistriúcháin:
+- Téarma cruthaithe as an réimír agus as an bhfocal thuas
+- Féach chomh maith ar an téarma training / traenáil'.
 
 
 **réamh-thraenáil (briathair): to pretrain**<br>
@@ -1913,6 +2019,18 @@ nótaí aistriúcháin:
 - Féach ar an téarma 'link prediction (LP) / réamhinsint nasc (RN)'
 
 
+**teisteáil (ainmfhocal): testing**<br>
+*sainmhíniú (ga):* An próiseas a úsáidtear chun fáil amach cé chomh maith (nó cé chomh dona) is a fheidhmíonn samhail ríomhfhoghlama tar éis di a bheith traenáilte.
+<br>
+*sainmhíniú (en):* The process that is used to determine how well (or how poorly) a machine learning model works after it has been trained.
+
+tagairtí:
+- teisteáil: Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Ní bhíonn an téarma seo luaite i gcomhthéacs ríomhaireachta sna foclóirí thuas.
+
+
 **teisteáil (briathar): to test**<br>
 *sainmhíniú (ga):* Próiseas teisteála a dhéanamh ar shamhail ríomhfhoghlama.
 <br>
@@ -1962,16 +2080,16 @@ nótaí aistriúcháin:
 - Féach ar an téarma 'metric / tomhas'.
 
 
-**tomhas (ainmfhocal): measure**<br>
+**tomhas (ainmfhocal): metric**<br>
 *sainmhíniú (ga):* I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar sonraí nó ar fheiniméan éigin, go háirithe nuair atá sé úsáidte chun dhá shraith sonraí / dhá fheiniméan chur i gcomparáid lena chéile.
 <br>
 *sainmhíniú (en):* In a mathematical context, a value that gives a quantitative description of data or some phenomenon, especially when used to compare two such data sets of phenomenons.
 
 tagairtí:
-- tomhas: féach ar an téarma 'metric / tomhas'
+- tomhas: De Bhaldraithe (1978), Dineen (1934), Ó Dónaill et al. (1991), Ó Dónaill (1977)
 
 nótaí aistriúcháin:
-- Féach ar an téarma 'metric / tomhas'.
+- Tá an téarma seo comhchiallach leis an téarma 'measure / tomhas' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
 
 
 **tomhas earráide (ainmfhocal): error**<br>
@@ -1985,6 +2103,30 @@ tagairtí:
 nótaí aistriúcháin:
 - Ní léir an féidir 'earráid' a úsáid seachas 'tomhas earráide' de réir na bhfoclóirí thuas. Thairis sin, tá 'tomhas earráide' i bhfad níos léire agus níos intuigthe ó thús.
 - Tá réimse leathan téarmaí eile a bhfuil bríonna comhchosúla acu (.i. botún, dearmad, tuathal, iomrall). Níor úsáideadh 'dearmad' toisc é a bheith bainteach chomh maith leis an gcuimhne, rud nach bhfuil i gceist anseo. Ní luaitear botún ná tuathal i gcomhthéacs eolaíochta na teicniúil. Is cosúil ó Fhoclóir Uí Dhónaill go bhfuil iomrall níos baintí le  heaspa comhsheasmhachta (m.sh urchar iomrall, iomrall céille, iomrall súil, srl). Thairis sin is uile, luann Foclóir de Bhaldraithe 'earráid' i gcomhthéacs teicniúil .i. i gcúrsaí gnó ('earráidí agus easnaimh eiscthe') agus míleata ('raonearráid'). Glactar leis mar sin.
+
+
+**tomhas (ainmfhocal): measure**<br>
+*sainmhíniú (ga):* I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar sonraí nó ar fheiniméan éigin, go háirithe nuair atá sé úsáidte chun dhá shraith sonraí / dhá fheiniméan chur i gcomparáid lena chéile.
+<br>
+*sainmhíniú (en):* In a mathematical context, a value that gives a quantitative description of data or some phenomenon, especially when used to compare two such data sets of phenomenons.
+
+tagairtí:
+- tomhas: féach ar an téarma 'metric / tomhas'
+
+nótaí aistriúcháin:
+- Féach ar an téarma 'metric / tomhas'.
+
+
+**traenáil (ainmfhocal): training**<br>
+*sainmhíniú (ga):* An próiseas a bhaineann le feabhsú samhla foghlama trí sonraí foghlama a thabhairt di.
+<br>
+*sainmhíniú (en):* The process of optimising a machine learning model by giving it data to learn from.
+
+tagairtí:
+- traenáil: De Bhaldraithe (1978), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Ní bhíonn an téarma seo luaite i gcomhthéacs ríomhaireachta sna foclóirí thuas.
 
 
 **traenáil (briathar): to train**<br>
@@ -2091,6 +2233,19 @@ tagairtí:
 
 nótaí aistriúcháin:
 - Téarma díreach ar fáil le brí chomhchosúil ó na foclóirí thuas.
+
+
+**éadlúth (aidiacht): sparse**<br>
+*sainmhíniú (ga):* I gcomhthéacs graif eolais (nó fo-ghraif), gan móran ceangail le codanna eile den ghraf / den fho-ghraf.
+<br>
+*sainmhíniú (en):* In the context of a knowledge graph (or subgraph), lowly connected with other parts of the same graph / subgraph.
+
+tagairtí:
+- éadlúth: De Bhaldraithe (1978), Ó Dónaill et al. (1991), Ó Dónaill (1977)
+
+nótaí aistriúcháin:
+- Luann Foclóir De Bhaldraithe agus Foclóir Uí Dhónaill an téarma seo mar théarma eolaíochta i gcomhthéacs aeir / an t-atmaisféar, ach leis an mbrí chéanna.
+- Tá go leor téarmaí eile (.i. tearc, gann, srl), ach úsáidtear 'éadlúth' toisc gur 'dlúth' an focal atá ar a mhalairt de rud.
 
 
 **éadlúth (ainmfhocal): sparsity**<br>

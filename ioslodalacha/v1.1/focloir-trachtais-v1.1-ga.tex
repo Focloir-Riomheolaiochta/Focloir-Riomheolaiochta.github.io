@@ -35,6 +35,7 @@
 		aschur&output\\ \hline 
 		bun-samhail&baseline model\\ \hline 
 		bunachar sonraí&database\\ \hline 
+		ceangal&edge\\ \hline 
 		ceangal&relation(ship)\\ \hline 
 		ceist&query\\ \hline 
 		ceist réamhinsinte nasc&link prediction query\\ \hline 
@@ -65,6 +66,7 @@
 		deimhnigh&to validate\\ \hline 
 		deimhniú&validation\\ \hline 
 		diúltach&negative\\ \hline 
+		dlúth&density\\ \hline 
 		dlúth&dense\\ \hline 
 		dáileadh&distribution\\ \hline 
 		dírithe&directed\\ \hline 
@@ -82,6 +84,7 @@
 		foghlaim easnamhach&underfitting\\ \hline 
 		folaigh&latent\\ \hline 
 		foshuíomh&assumption\\ \hline 
+		frith-shampla&negative (sample)\\ \hline 
 		frith-shampla&counterexample\\ \hline 
 		frith-shamplóir&negative sampler\\ \hline 
 		fíor-abairt (thriarach)&positive (triple)\\ \hline 
@@ -99,6 +102,7 @@
 		le lipéad&labelled\\ \hline 
 		leabú&embedding\\ \hline 
 		leabú graif eolais (LGE)&knowledge graph embedding (KGE)\\ \hline 
+		leagan&instantiation (concept)\\ \hline 
 		leagan&representation\\ \hline 
 		lipéad&label\\ \hline 
 		líonra&network\\ \hline 
@@ -106,8 +110,10 @@
 		líonra néarach (LN)&neural network (NN)\\ \hline 
 		líonra ríomhairí&computer network\\ \hline 
 		mapa&mapping\\ \hline 
-		meastachán&approximation\\ \hline 
+		meastachán&estimate\\ \hline 
+		meastachán a dhéanamh (ar)&to approximate\\ \hline 
 		meastachán a dhéanamh (ar)&to estimate (about)\\ \hline 
+		meastachán&approximation\\ \hline 
 		measúnaigh&to evaluate\\ \hline 
 		measúnú&evaluation\\ \hline 
 		minicíocht&frequency\\ \hline 
@@ -123,6 +129,7 @@
 		randamach&random\\ \hline 
 		ráta foghlama&learning rate\\ \hline 
 		réad&instantiation (object)\\ \hline 
+		réamh-thraenáil&pretraining\\ \hline 
 		réamh-thraenáil&to pretrain\\ \hline 
 		réamhinsint nasc (RN)&link prediction (LP)\\ \hline 
 		réamhinsteoir nasc&link predictor\\ \hline 
@@ -156,12 +163,15 @@
 		tacar teisteála&testing set\\ \hline 
 		tacar traenála&training set\\ \hline 
 		tasc réamhinsinte nasc&link prediction task\\ \hline 
+		teisteáil&testing\\ \hline 
 		teisteáil&to test\\ \hline 
 		toipeolaíocht&topology\\ \hline 
 		toise&dimension\\ \hline 
 		tomhais&to measure\\ \hline 
-		tomhas&measure\\ \hline 
+		tomhas&metric\\ \hline 
 		tomhas earráide&error\\ \hline 
+		tomhas&measure\\ \hline 
+		traenáil&training\\ \hline 
 		traenáil&to train\\ \hline 
 		tras-fhoghlaim&transfer learning\\ \hline 
 		ualach&weight\\ \hline 
@@ -170,6 +180,7 @@
 		uilíoch&global\\ \hline 
 		veicteoir&vector\\ \hline 
 		áitiúil&local\\ \hline 
+		éadlúth&sparse\\ \hline 
 		éadlúth&sparsity\\ \hline 
 		éifeachtacht (ama, fhuinnimh)&efficiency\\ \hline 
 		éifeachtacht (ama, taisc)&performance\\ \hline 
@@ -394,6 +405,23 @@ nótaí aistriúcháin:
 	\item * Úsáidtear 'bunachair' mar leagan iolra den téarma seo, cé nach bhfuil leagan iolra den fhocal 'bunachar' luaite i bhFoclóir Uí Dhónaill.
 	\item Tá 'bunachar sonraí' ar fáil mar aistriúchán ar 'database' ar Foclóir.ie agus ar Téarma.ie, ach níl i bhfoclóir ar bith eile a úsáidtear sa tráchtas seo (.i. Ó Dónall, Ua Duinnín, srl). Sin ráite, tá idir 'bunachar' agus 'sonra' ar fáil i go leor foclóirí eile, agus níl fianaise ar bith ann go mbeadh an téarma 'bunachar sonraí' mí-nádúrtha dá bharr sin. Móide sin, níl cúis ar bith téarma eile le brí gaolmhar (m.sh. 'foras sonraí') a chumadh nua atá téarma cuí ann cheana féin. Glactar le 'bunachar sonraí' mar sin.
 	\item Úsáidtear 'sonraí' san uimhir iolra toisc go bhfuil níos mó ná sonra amháin i nach uile bunachar sonraí (nach mór).
+\end{itemize}
+
+
+\textbf{ceangal (ainmfhocal): edge}
+\textit{sainmhíniú (ga):} cuid de ghraf a nascann (nó a cheanglaíonn) dhá nód le chéile.
+
+\textit{sainmhíniú (en):} an element of a graph that serves to connect two nodes.
+
+tagairtí:
+\begin{itemize}
+	\item ceangal: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Dineen (1934) \cite{dineen}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Is mar thagairt d'fheistiú (le rópa) a úsáidtear an téarma seo den chuid is mó sna foclóirí. Sin ráite, is féidir a rá chomh maith go bhfuil dhá nód a bhfuil ceangal eatarthu 'feistithe' lena chéile, sa chaoi nach measann an t-údar gur bac ar bith é sin ar úsáid an fhocail 'ceangal' leis an mbrí nua seo.
+	\item Seo an téarma céanna is a úsáidtear chun 'relation(ship)' a chur in iúl, toisc go bhfuil an bhrí chéanna leis.
 \end{itemize}
 
 
@@ -910,6 +938,22 @@ nótaí aistriúcháin:
 \end{itemize}
 
 
+\textbf{dlúth (ainmfhocal): density}
+\textit{sainmhíniú (ga):} I gcomhthéacs graif eolais (nó fo-ghraif), cé chomh dlúth is atá sé.
+
+\textit{sainmhíniú (en):} In the context of a knowledge graph (or subgraph), how dense it is.
+
+tagairtí:
+\begin{itemize}
+	\item dlúth: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Téarma díreach ar fáil le brí chomhchosúil.
+\end{itemize}
+
+
 \textbf{dlúth (aidiacht): dense}
 \textit{sainmhíniú (ga):} I gcomhthéacs graif eolais (nó fo-ghraif), an-cheangailte le codanna eile den ghraf / den fho-ghraf.
 
@@ -1196,6 +1240,24 @@ nótaí aistriúcháin:
 \begin{itemize}
 	\item De réir Fhoclóirí Uí Dhónaill agus De Bhaldraithe, is téarma fealsúnachta é seo. Cloíonn sé sin leis an gcomhthéacs eolaíochta atá i gceist leis an tráchtas seo.
 	\item Is féidir 'cur i gcás' nó 'beirtear leis' a úsáid chomh maith i bhfrása chun brí chomhchosúil leis seo a chur in iúl.
+\end{itemize}
+
+
+\textbf{frith-shampla (ainmfhocal): negative (sample)}
+\textit{sainmhíniú (ga):} I gcomhthéacs graf eolais, abairt thriarach bhréagach a úsáidtear mar fhrith-shampla.
+
+\textit{sainmhíniú (en):} In the context of knowledge graphs, a fake triple that is used as a counterexample.
+
+tagairtí:
+\begin{itemize}
+	\item frith-: féach ar an téarma 'counterexample / frith-shampla'
+	\item sampla: féach ar an téarma 'sample / shampla'
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Úsáidtear frith-shampla toisc gurb in, go díreach, a bhfuil i gceist sa gcás seo.
+	\item Féach chomh maith ar an téarma 'counterexample / frith-shampla'
 \end{itemize}
 
 
@@ -1488,6 +1550,24 @@ nótaí aistriúcháin:
 \end{itemize}
 
 
+\textbf{leagan (ainmfhocal): instantiation (concept)}
+\textit{sainmhíniú (ga):} Sampla de choincheap nó de chreatlach, nach ionann agus réad matamaiticiúil / ríomhaireachta.
+
+\textit{sainmhíniú (en):} An instance or example of a concept or framework, other than a mathematical / computational object.
+
+tagairtí:
+\begin{itemize}
+	\item leagan: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Dineen (1934) \cite{dineen}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Ní i gcomhthéacs eolaíochta a luaitear an téarma seo, ach is le brí comhchosúil atá sé luaite.
+	\item Más gá a léiriú gur rud coincréiteach atá i gceist le 'leagan', seachas rud teibí, moltar 'coincréiteach' a úsáid, i dtaca le Foclóir Uí Dhónaill agus Foclóir de Bhaldraithe.
+	\item Tá an t-aistriúchán céanna luaite i dtéarma eile sa bhfoclóir seo; féach ar an téarma 'representation / leagan'. Sin ráite, tá an bhrí a bhaineann le 'leagan' i nGaeilge leathan go leor le go bhfuil sé in ann seasamh isteach sa dá chás. Beidh sé léir go leor ón gcomhthéacs cén ceann acu atá i gceist.
+\end{itemize}
+
+
 \textbf{leagan (ainmfhocal): representation}
 \textit{sainmhíniú (ga):} I gcomhthéacs leabuithe graif eolais, leabú nó veicteoir a dhéanann ionad (ar leibhéal matamaiticiúil) réada nó coincheapa sa ngraf.
 
@@ -1611,19 +1691,38 @@ nótaí aistriúcháin:
 \end{itemize}
 
 
-\textbf{meastachán (ainmfhocal): approximation}
+\textbf{meastachán (ainmfhocal): estimate}
 \textit{sainmhíniú (ga):} I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar fheiniméan éigin, gan a bheith iomlán cruinn.
 
 \textit{sainmhíniú (en):} In a mathematical context, a value that gives a quantitative description of some phenomenon, but which may not be entirely exact.
 
 tagairtí:
 \begin{itemize}
-	\item meastachán: féach ar an téarma 'estimate / meastachán'
+	\item meastachán: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
 \end{itemize}
 
 nótaí aistriúcháin:
 \begin{itemize}
-	\item Féach ar an téarma 'estimate / meastachán'.
+	\item Téarma ar fáil mar téarma airgeadais / matamaitice ó na foclóirí thuas.
+	\item Is féidir 'tomhas' a úsáid chomh maith (go háirithe sa gcaint) chun brí comhchosúil leis seo a chur in iúl. Cé is moite de sin, roghnaíodh 'meastachán' mar théarma dó seo chun idirdhealú léir a dhéanamh idir 'metric / tomhas' agus '*estimate / tomhas'. Ar leibhéal neamh-fhoirmeálta, tá sé ceart go leor tomhas a úsáid leis an mbrí sin nuair is léir ón gcomhthéacs cén bhrí atá i gceist leis.
+	\item Nuair is meastachán míchruinn (nach ionann agus mícheart) atá i gceist, moltar an téarma 'garmheastachán' (de réir Fhoclóir Uí Dhónaill agus Fhoclóir De  Bhaldraithe.
+	\item Tá an téarma seo comhchiallach leis an téarma 'approximation / meastachán' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
+\end{itemize}
+
+
+\textbf{meastachán a dhéanamh (ar) (ainmfhocal): to approximate}
+\textit{sainmhíniú (ga):} Luach a mheas.
+
+\textit{sainmhíniú (en):} To estimate a value.
+
+tagairtí:
+\begin{itemize}
+	\item meastachán: féach ar an téarma 'to estimate (about) / meastachán a dhéanamh (ar)'
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Féach ar an téarma 'to estimate (about) / meastachán a dhéanamh (ar)'.
 \end{itemize}
 
 
@@ -1641,6 +1740,22 @@ nótaí aistriúcháin:
 \begin{itemize}
 	\item Féach ar an téarma 'estimate / meastachán'.
 	\item Tá an téarma seo comhchiallach leis an téarma 'to approximate / meastachán a dhéanamh (ar)' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
+\end{itemize}
+
+
+\textbf{meastachán (ainmfhocal): approximation}
+\textit{sainmhíniú (ga):} I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar fheiniméan éigin, gan a bheith iomlán cruinn.
+
+\textit{sainmhíniú (en):} In a mathematical context, a value that gives a quantitative description of some phenomenon, but which may not be entirely exact.
+
+tagairtí:
+\begin{itemize}
+	\item meastachán: féach ar an téarma 'estimate / meastachán'
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Féach ar an téarma 'estimate / meastachán'.
 \end{itemize}
 
 
@@ -1897,6 +2012,24 @@ nótaí aistriúcháin:
 	\item * Ní luann Foclóir Uí Dhuinín an téarma 'réad' ach i gcomhthéacs filíochta.
 	\item Focal luaite i gcomhthéacs comhchosúil na foclóirí eile thuas.
 	\item Féach chomh maith ar an téarma 'to instantiate / cruthaigh'.
+\end{itemize}
+
+
+\textbf{réamh-thraenáil (ainmfhocal): pretraining}
+\textit{sainmhíniú (ga):} An próiseas a bhaineann le samhail ríomhfhoghlama a thraenáil le plean é a mion-fheabbhsú níos déanaí ar shonraí nua.
+
+\textit{sainmhíniú (en):} The process of training a machine learning model with intent to finetune it later on new data.
+
+tagairtí:
+\begin{itemize}
+	\item réamh-: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Dineen (1934) \cite{dineen}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+	\item traenáil: féach ar an téarma 'training / traenáil'
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Téarma cruthaithe as an réimír agus as an bhfocal thuas
+	\item Féach chomh maith ar an téarma training / traenáil'.
 \end{itemize}
 
 
@@ -2469,6 +2602,22 @@ nótaí aistriúcháin:
 \end{itemize}
 
 
+\textbf{teisteáil (ainmfhocal): testing}
+\textit{sainmhíniú (ga):} An próiseas a úsáidtear chun fáil amach cé chomh maith (nó cé chomh dona) is a fheidhmíonn samhail ríomhfhoghlama tar éis di a bheith traenáilte.
+
+\textit{sainmhíniú (en):} The process that is used to determine how well (or how poorly) a machine learning model works after it has been trained.
+
+tagairtí:
+\begin{itemize}
+	\item teisteáil: Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Ní bhíonn an téarma seo luaite i gcomhthéacs ríomhaireachta sna foclóirí thuas.
+\end{itemize}
+
+
 \textbf{teisteáil (briathar): to test}
 \textit{sainmhíniú (ga):} Próiseas teisteála a dhéanamh ar shamhail ríomhfhoghlama.
 
@@ -2534,19 +2683,19 @@ nótaí aistriúcháin:
 \end{itemize}
 
 
-\textbf{tomhas (ainmfhocal): measure}
+\textbf{tomhas (ainmfhocal): metric}
 \textit{sainmhíniú (ga):} I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar sonraí nó ar fheiniméan éigin, go háirithe nuair atá sé úsáidte chun dhá shraith sonraí / dhá fheiniméan chur i gcomparáid lena chéile.
 
 \textit{sainmhíniú (en):} In a mathematical context, a value that gives a quantitative description of data or some phenomenon, especially when used to compare two such data sets of phenomenons.
 
 tagairtí:
 \begin{itemize}
-	\item tomhas: féach ar an téarma 'metric / tomhas'
+	\item tomhas: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Dineen (1934) \cite{dineen}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
 \end{itemize}
 
 nótaí aistriúcháin:
 \begin{itemize}
-	\item Féach ar an téarma 'metric / tomhas'.
+	\item Tá an téarma seo comhchiallach leis an téarma 'measure / tomhas' sa gcomhthéacs matamaitice / ríomheolaíochta atá i gceist anseo.
 \end{itemize}
 
 
@@ -2564,6 +2713,38 @@ nótaí aistriúcháin:
 \begin{itemize}
 	\item Ní léir an féidir 'earráid' a úsáid seachas 'tomhas earráide' de réir na bhfoclóirí thuas. Thairis sin, tá 'tomhas earráide' i bhfad níos léire agus níos intuigthe ó thús.
 	\item Tá réimse leathan téarmaí eile a bhfuil bríonna comhchosúla acu (.i. botún, dearmad, tuathal, iomrall). Níor úsáideadh 'dearmad' toisc é a bheith bainteach chomh maith leis an gcuimhne, rud nach bhfuil i gceist anseo. Ní luaitear botún ná tuathal i gcomhthéacs eolaíochta na teicniúil. Is cosúil ó Fhoclóir Uí Dhónaill go bhfuil iomrall níos baintí le  heaspa comhsheasmhachta (m.sh urchar iomrall, iomrall céille, iomrall súil, srl). Thairis sin is uile, luann Foclóir de Bhaldraithe 'earráid' i gcomhthéacs teicniúil .i. i gcúrsaí gnó ('earráidí agus easnaimh eiscthe') agus míleata ('raonearráid'). Glactar leis mar sin.
+\end{itemize}
+
+
+\textbf{tomhas (ainmfhocal): measure}
+\textit{sainmhíniú (ga):} I gcomhthéacs matamaitice, luach a dhéanann cur síos cainníochtúil ar sonraí nó ar fheiniméan éigin, go háirithe nuair atá sé úsáidte chun dhá shraith sonraí / dhá fheiniméan chur i gcomparáid lena chéile.
+
+\textit{sainmhíniú (en):} In a mathematical context, a value that gives a quantitative description of data or some phenomenon, especially when used to compare two such data sets of phenomenons.
+
+tagairtí:
+\begin{itemize}
+	\item tomhas: féach ar an téarma 'metric / tomhas'
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Féach ar an téarma 'metric / tomhas'.
+\end{itemize}
+
+
+\textbf{traenáil (ainmfhocal): training}
+\textit{sainmhíniú (ga):} An próiseas a bhaineann le feabhsú samhla foghlama trí sonraí foghlama a thabhairt di.
+
+\textit{sainmhíniú (en):} The process of optimising a machine learning model by giving it data to learn from.
+
+tagairtí:
+\begin{itemize}
+	\item traenáil: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Ní bhíonn an téarma seo luaite i gcomhthéacs ríomhaireachta sna foclóirí thuas.
 \end{itemize}
 
 
@@ -2702,6 +2883,23 @@ tagairtí:
 nótaí aistriúcháin:
 \begin{itemize}
 	\item Téarma díreach ar fáil le brí chomhchosúil ó na foclóirí thuas.
+\end{itemize}
+
+
+\textbf{éadlúth (aidiacht): sparse}
+\textit{sainmhíniú (ga):} I gcomhthéacs graif eolais (nó fo-ghraif), gan móran ceangail le codanna eile den ghraf / den fho-ghraf.
+
+\textit{sainmhíniú (en):} In the context of a knowledge graph (or subgraph), lowly connected with other parts of the same graph / subgraph.
+
+tagairtí:
+\begin{itemize}
+	\item éadlúth: De Bhaldraithe (1978) \cite{de-bhaldraithe}, Ó Dónaill et al. (1991) \cite{focloir-beag}, Ó Dónaill (1977) \cite{odonaill}
+\end{itemize}
+
+nótaí aistriúcháin:
+\begin{itemize}
+	\item Luann Foclóir De Bhaldraithe agus Foclóir Uí Dhónaill an téarma seo mar théarma eolaíochta i gcomhthéacs aeir / an t-atmaisféar, ach leis an mbrí chéanna.
+	\item Tá go leor téarmaí eile (.i. tearc, gann, srl), ach úsáidtear 'éadlúth' toisc gur 'dlúth' an focal atá ar a mhalairt de rud.
 \end{itemize}
 
 
