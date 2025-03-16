@@ -1,3 +1,49 @@
+/* for phones / tall windows */
+@media screen and (orientation:portrait)
+{
+    /* for tall windows */
+    html
+    {
+        /* rem is set relative to this -- 16 is the default, but I need larger for mobile */
+        font-size: 16px;
+    }
+    
+    /* for phones wth tall windows (overries above) */
+    @media (pointer:none), (pointer:coarse) {
+        html
+        {
+            /* rem is set relative to this -- 16 is the default, but I need larger for mobile */
+            font-size: 24px;
+        }
+    }
+    
+    .centerbox{
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color:#444;
+    }
+}
+
+/* for computers */
+@media screen and (orientation:landscape)
+{
+    html
+    {
+        /* rem is set relative to this -- 16 is the default, but I need larger for mobile */
+        font-size: 16px;
+    }
+
+    .centerbox{
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color:#444;
+    }
+}
+
 body
 {
     background-color:#333333;
@@ -7,16 +53,12 @@ body
 h1
 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4rem;
 }
 
-.centerbox
+h2
 {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    font-size: 1.5em;
-    background-color:#444;
+    font-size: 3rem;
 }
 
 a
@@ -50,6 +92,11 @@ button
     border-color: #444444;
 }
 
+.center-text
+{
+    text-align: center;
+}
+
 
 /* 404 page */
 #not-found
@@ -61,16 +108,22 @@ button
 
 
 /* index.html in Foclóir Tráchtais */  
-/* ref: https://www.w3schools.com/howto/howto_js_filter_lists.asp */  
+/* ref: https://www.w3schools.com/howto/howto_js_filter_lists.asp */ 
+#mainHeader
+{
+    margin-bottom: 0px;
+} 
+
 #versionNum
 {
     text-align: center;
+    margin-top: 0px;
 }
 
 #termInput
 {
     width: 99.5%;
-    font-size: 16px; /* Increase font-size */
+    font-size: 1rem; /* Increase font-size */
     padding-top: 12px; /* Add some padding */
     padding-bottom: 12px; /* Add some padding */
     margin-bottom: 12px; /* Add some space below the input */
@@ -91,7 +144,7 @@ button
     background-color: #444; /* Grey background color */
     padding: 12px; /* Add some padding */
     text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
+    font-size: 1em; /* Increase the font-size */
     color: #ffffff; /* Add a black text color */
     display: block; /* Make it into a block element to fill the whole list */
 }
@@ -106,18 +159,36 @@ button
 /* https://www.w3schools.com/howto/howto_js_topnav.asp */
 /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #222;
-    width: 60%;
-    position: relative;
-    left: 20%;
+/* for phones / tall windows */
+@media screen and (orientation:portrait) {
+    .topnav {
+        background-color: #222;
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+}
+
+/* for computers */
+@media screen and (orientation:landscape) {
+    .topnav {
+        background-color: #222;
+        width: 60%;
+        position: relative;
+        left: 20%;
+    }
+}
+
+.letter-header
+{
+    margin-bottom: 0px;
 }
 
 /* Dropdown Button */
 .dropbtn {
     background-color: #222;
     padding: 16px;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
 }
 
@@ -166,5 +237,5 @@ button
 .footer
 {
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
