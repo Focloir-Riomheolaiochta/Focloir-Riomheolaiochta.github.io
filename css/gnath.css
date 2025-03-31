@@ -158,21 +158,20 @@ button
 #suas {
     display: none;
     position: fixed;
-    bottom: 25;
-    right: 25px;
-    z-index: 99;
+    bottom: 1%;
+    right: 1%;
     border: none;
     outline: none;
-    background-color: #000;
+    background-color: #656565;
     color: #fff;
     cursor: pointer;
     padding: 15px;
     font-size: 1rem;
-  }
+}
   
-  #suas:hover {
+#suas:hover {
     background-color: #444; /* Add a dark-grey background on hover */
-  }
+}
 
 
 /* header.html */  
