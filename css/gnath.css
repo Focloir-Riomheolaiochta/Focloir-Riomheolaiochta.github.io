@@ -151,7 +151,7 @@ button
 
 #dict-idx li a:hover:not(.header)
 {
-    background-color: #111111; /* Add a hover effect to all links, except for headers */
+    background-color: #111; /* Add a hover effect to all links, except for headers */
 }
 
 /* see: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -170,7 +170,7 @@ button
 }
   
 #anios:hover {
-    background-color: #444; /* Add a dark-grey background on hover */
+    background-color: #111; /* Add a dark-grey background on hover */
 }
 
 
