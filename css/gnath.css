@@ -39,7 +39,7 @@
         margin: auto;
         width: 60%;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         background-color:#444;
     }
 }
@@ -153,6 +153,26 @@ button
 {
     background-color: #111111; /* Add a hover effect to all links, except for headers */
 }
+
+/* see: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#suas {
+    display: none;
+    position: fixed;
+    bottom: 25;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  #suas:hover {
+    background-color: #444; /* Add a dark-grey background on hover */
+  }
 
 
 /* header.html */  
