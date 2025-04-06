@@ -49,7 +49,7 @@
             <a href="#V">V</a>
             <a href="#W">W</a>
             <a href="#Z">Z</a>
-            <a href="#" onclick="randPage()">Leathanach Randamach</a>
+            <a href="#" onclick="randPage()"> | Téarma Randamach</a>
         </p>
         <input type="text" id="termInput" onkeyup="termSearch()" placeholder="Cuardaigh téarma i mBéarla nó i nGaeilge...">
         <ul id="dict-idx">
@@ -488,7 +488,7 @@
         function randPage() {
             let rand_idx = Math.floor(Math.random() * term_pages.length);
             let rand_page = term_pages[rand_idx];
-            window.location.replace(rand_page);
+            window.location.assign(rand_page);
             event.preventDefault();
         }
         </script>
